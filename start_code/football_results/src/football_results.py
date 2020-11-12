@@ -10,8 +10,6 @@ def get_result(final_score):
         return "Draw"
 
 def get_results(final_scores):
-    pass
     # (You could try and use a list comprehension for this)
     #For each score in the final scores list, we want to run the get result function, then add the result to a new list
-    results = [get_result(score) for score in final_scores]
-    return results
+    return [get_result(score) for score in final_scores]
