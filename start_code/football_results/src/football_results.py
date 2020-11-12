@@ -1,5 +1,7 @@
 def get_result(final_score):
-    pass
+    #return home win if the home score is greater than the away score
+    if final_score["home_score"] > final_score["away_score"]:
+        return "Home win"
 
 def get_results(final_scores):
     pass
