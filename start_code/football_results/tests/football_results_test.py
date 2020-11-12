@@ -27,6 +27,8 @@ class FootballResultsTest(unittest.TestCase):
         away_win = get_result(self.result_2)
         self.assertEqual("Away win", away_win)
         # Draw
+        draw = get_result(self.result_3)
+        self.assertEqual("Draw", draw)
 
     # Test we get right list of result strings for a list of final score dictionaries. 
 

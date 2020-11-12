@@ -5,6 +5,10 @@ def get_result(final_score):
     #return away win if the away score is greater than the home score
     elif final_score["away_score"] > final_score["home_score"]:
         return "Away win"
+    #return draw if both the home and away scores are the same
+    else:
+        return "Draw"
+        
 def get_results(final_scores):
     pass
     # (You could try and use a list comprehension for this)
