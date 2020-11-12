@@ -16,9 +16,7 @@ class HighScoresTest(unittest.TestCase):
     # Test latest score (the last thing in the list)
 
     def test_latest_score(self):
-        
         latest_scores = latest(self.scores)    
-        
         self.assertEqual(10, latest_scores)
     
 

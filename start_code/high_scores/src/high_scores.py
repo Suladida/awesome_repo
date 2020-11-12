@@ -1,5 +1,5 @@
 def latest(scores):
-    return scores[9]
+    return scores[-1]
     # pass
 
 
@@ -9,3 +9,4 @@ def personal_best(scores):
 
 def personal_top_three(scores):
     pass
+
