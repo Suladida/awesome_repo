@@ -30,7 +30,10 @@ class FootballResultsTest(unittest.TestCase):
         draw = get_result(self.final_scores[2])
         self.assertEqual("Draw", draw)
 
-    # Test we get right list of result strings for a list of final score dictionaries. 
+    # Test we get right list of result strings for a list of final score dictionaries.
+    def test_get_results(self):
+        all_scores = get_results(self.final_scores)
+        self.assertEqual(["Home win", "Away win", "Draw"], all_scores)
 
 
 if __name__ == "__main__":
